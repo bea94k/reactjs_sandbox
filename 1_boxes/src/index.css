@@ -13,8 +13,17 @@ code {
 }
 
 .box {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: seagreen;
   color: white;
+  border-radius: 7px;
+  padding: 3rem;
+  margin: 2rem;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.box:hover {
+  background-color: rgb(33, 99, 61);
 }
