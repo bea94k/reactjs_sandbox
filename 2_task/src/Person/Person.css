@@ -1,11 +1,11 @@
 .person-card {
     width: 60%;
-    height: 200px;
+    height: 100px;
     background-color: navy;
     color: white;
-    padding: 4rem;
+    padding: 3rem;
     margin: 1rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border: 10px solid magenta ;
     border-radius: 10px;
     box-shadow: 0 0 15px black;
