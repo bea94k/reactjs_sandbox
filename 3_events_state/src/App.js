@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from './Header/Header.js';
+import Footer from './Footer/Footer.js';
+
 
 
 class App extends Component {
@@ -21,20 +24,24 @@ class App extends Component {
 
   resetLikes = () => {
     this.setState({
-      likes: this.state.likes = 0
+      likes: 0
     });
   };
 
   render() {
     return (
       <div>
-        <h1>Total likes: {this.state.likes} </h1>
-        <button onClick={this.addLike}>Add a like</button>
-        <button onClick={this.substractLike}>Substract a like</button>
-        <button onClick={this.resetLikes}>Reset likes counter</button>
+        <Header />
+        <main>
+          <h2 className={this.state.likes === 0 ? "likes" : this.state.likes % 2 === 0 ? "likes even" : "likes odd"}>Total likes: {this.state.likes} </h2>
+          <button onClick={this.addLike}>Add a like</button>
+          <button onClick={this.substractLike}>Substract a like</button>
+          <button onClick={this.resetLikes}>Reset likes counter</button>
+        </main>
+        <Footer />
       </div>
     )
   }
-}
+};
 
 export default App;

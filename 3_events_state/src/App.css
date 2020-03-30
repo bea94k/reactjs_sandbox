@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+main {
+  background-image: linear-gradient(to top, #035955, #007c6d, #00a07e, #00c689, #12eb8d);
+  color: rgb(2, 66, 63);
+  height: 85vh;
+  width: 100%;
+  padding: 2rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 30%);
+  grid-gap: 2rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.likes {
+  width: 50%;
+  height: 80%;
+  border-radius: 25px;
+
+  grid-column: 1 / span 3;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.even {
+  background: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px gray;
+}
+
+.odd {
+  background: rgb(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 5px gray;
+}
+
+button {
+  height: 50%;
+  width: 80%;
+  color: rgb(2, 66, 63);
+  border: none;
+  border-radius: 10px;
+  background: rgb(63, 245, 166);
+  transition: all 0.5s;
+}
+
+button:hover {
+  background: rgb(63, 245, 166, 0.7);
 }

@@ -1,0 +1,11 @@
+.footer {
+    background: rgb(2, 66, 63);
+    color: rgb(63, 245, 166);
+    height: 5vh;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}

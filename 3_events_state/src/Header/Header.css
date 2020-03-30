@@ -1,0 +1,17 @@
+.header {
+    background: rgb(63, 245, 166);
+    color: rgb(2, 66, 63);
+    height: 10vh;
+    display: grid;
+    grid-column: 2;
+    align-items: center;
+}
+
+.header h1, .header p {
+    padding: 0 2rem;
+}
+
+.header p {
+    grid-column-start: 2;
+    justify-self: right;
+}
