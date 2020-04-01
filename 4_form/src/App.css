@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@410&family=Special+Elite&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-wrap {
+    font-family: 'Oswald', sans-serif;
+    padding: 2rem;
+    height: 100vh;
+    width: 100%;
+    background: #d8d8d8;
+    background-image: linear-gradient(to bottom, #d8d8d8, #d0d0d0, #c7c7c7, #bfbfbf, #b7b7b7);
+    color: rgb(0, 0, 80);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+h1 {
+    text-align: center;
+}

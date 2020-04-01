@@ -3,12 +3,12 @@ import './View.css';
 
 const View = props => {
     return (
-        <div className="view">
-            <h2>This is your input:</h2>
-            <p>First name: {props.firstname}</p>
-            <p>Last name: {props.lastname}</p>
-            <p>Phone number: {props.phonenumber}</p>
-            <p>Message: {props.message}</p>
+        <div className="paper">
+            <h2>Report</h2>
+            <p>Customer: {props.firstname}</p>
+            <p>Cashier: {props.lastname}</p>
+            <p>Total price: {props.phonenumber}</p>
+            <p>Items:</p><p>{props.message}</p>
         </div>
     );
 };

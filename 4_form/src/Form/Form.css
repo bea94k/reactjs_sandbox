@@ -1,0 +1,22 @@
+form {
+    padding-top: 2rem;
+}
+
+input, textarea {
+    font-family: 'Oswald', sans-serif;
+    float: right;
+    height: 1.5rem;
+    padding: 0.2rem;
+    margin: 0.75rem 2rem 0;
+    width: 50%;
+    border: none;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 5rem;
+}
+
+label {
+    line-height: 3rem;
+}

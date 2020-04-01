@@ -1,0 +1,35 @@
+.paper {
+    background: rgb(238, 238, 140);
+    font-family: 'Special Elite', sans-serif;
+    color: black;
+    padding: 0 2rem 0 3.5rem;
+    line-height: 2rem;
+    background-image: repeating-linear-gradient(transparent, transparent 30px, rgba(128, 128, 128, 0.4) 30px, rgba(128, 128, 128, 0.4) 32px),linear-gradient(90deg, transparent 48px, #abced4 48px, #abced4 50px, transparent 50px);
+    height: 80vh;
+    position: relative;
+}
+
+.paper h2 {
+    text-align: center;
+    line-height: 4rem;
+}
+
+.paper::before, 
+.paper::after {
+    content:'';
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.616);
+    position: absolute;
+    left: 20px;
+}
+
+.paper::before {
+    top: 30%;
+}
+
+.paper::after {
+    bottom: 30%;
+}

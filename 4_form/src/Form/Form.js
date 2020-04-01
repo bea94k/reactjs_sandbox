@@ -5,23 +5,23 @@ const Form = props => {
     return (
         <form>
             <label>
-                <span>First name:</span>
+                <span>Customer:</span>
                 <input onChange={props.changeValue} name="firstname" type="text" />
             </label>
             <br />
             <label>
-                <span>Last name:</span>
+                <span>Cashier:</span>
                 <input onChange={props.changeValue} name="lastname" type="text" />
             </label>
             <br />
             <label>
-                <span>Phone number:</span>
+                <span>Total price:</span>
                 <input onChange={props.changeValue} name="phonenumber" type="text" />
             </label>
             <br />
             <label>
-                <span>Message:</span>
-                <input onChange={props.changeValue} name="message" type="text" />
+                <span>Items:</span>
+                <textarea onChange={props.changeValue} name="message"></textarea>
             </label>
         </form>
     );
