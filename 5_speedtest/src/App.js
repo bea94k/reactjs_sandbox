@@ -55,10 +55,26 @@ class App extends Component {
         <h1>Speed test</h1>
         <p>Your score: {this.state.score}</p>
         <main>
-          <Circle clickCircle={this.clickHandler.bind(this, 1)} />
-          <Circle clickCircle={this.clickHandler.bind(this, 2)} />
-          <Circle clickCircle={this.clickHandler.bind(this, 3)} />
-          <Circle clickCircle={this.clickHandler.bind(this, 4)} />
+          <Circle
+            active={this.state.current === 1}
+            buttonColor="yellow"
+            clickCircle={this.clickHandler.bind(this, 1)}
+          />
+          <Circle
+            active={this.state.current === 2}
+            buttonColor="green"
+            clickCircle={this.clickHandler.bind(this, 2)}
+          />
+          <Circle
+            active={this.state.current === 3}
+            buttonColor="blue"
+            clickCircle={this.clickHandler.bind(this, 3)}
+          />
+          <Circle
+            active={this.state.current === 4}
+            buttonColor="red"
+            clickCircle={this.clickHandler.bind(this, 4)}
+          />
           {/* binding can pass data to the handler */}
         </main>
         <div>

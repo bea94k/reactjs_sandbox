@@ -10,3 +10,7 @@
 .circle:hover {
     cursor: pointer;
 }
+
+.circle.active {
+background: white;
+}
