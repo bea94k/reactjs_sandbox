@@ -6,22 +6,22 @@ const Form = props => {
         <form>
             <label>
                 <span>Customer:</span>
-                <input onChange={props.changeValue} name="firstname" type="text" />
+                <input onChange={props.changeValue} name="customer" type="text" />
             </label>
             <br />
             <label>
                 <span>Cashier:</span>
-                <input onChange={props.changeValue} name="lastname" type="text" />
+                <input onChange={props.changeValue} name="cashier" type="text" />
             </label>
             <br />
             <label>
                 <span>Total price:</span>
-                <input onChange={props.changeValue} name="phonenumber" type="text" />
+                <input onChange={props.changeValue} name="totalprice" type="text" />
             </label>
             <br />
             <label>
                 <span>Items:</span>
-                <textarea onChange={props.changeValue} name="message"></textarea>
+                <textarea onChange={props.changeValue} name="items"></textarea>
             </label>
         </form>
     );

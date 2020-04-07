@@ -5,10 +5,10 @@ import View from './View/View.js';
 
 class App extends Component {
   state = {
-    firstname: '',
-    lastname: '',
-    phonenumber: '',
-    message: ''
+    customer: '',
+    cashier: '',
+    totalprice: '',
+    items: ''
   }
 
   handleInputChange = (event) => {
@@ -26,7 +26,7 @@ class App extends Component {
           <Form changeValue={this.handleInputChange} />
         </div>
         <div className="report-sheet">
-          <View firstname={this.state.firstname} lastname={this.state.lastname} phonenumber={this.state.phonenumber} message={this.state.message} />
+          <View customer={this.state.customer} cashier={this.state.cashier} totalprice={this.state.totalprice} items={this.state.items} />
         </div>
       </div >
     )
