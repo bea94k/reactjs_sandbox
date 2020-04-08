@@ -1,0 +1,28 @@
+.end-screen {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.747);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.end-score-box {
+    width: 50%;
+    height: 30%;
+    background: gray;
+    border-radius: 3px;
+    position: relative;
+    display: grid;
+    align-items: center;
+}
+
+.end-score-box .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}

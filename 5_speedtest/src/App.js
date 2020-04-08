@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Circle from './Circle/Circle.js';
+import GameOver from './GameOver/GameOver.js';
 
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -77,10 +78,11 @@ class App extends Component {
           />
           {/* binding can pass data to the handler */}
         </main>
-        <div>
+        <div className="start-end-btns">
           <button onClick={this.startHandler}>New game</button>
           <button onClick={this.endHandler}>End game</button>
         </div>
+        <GameOver finalscore={this.state.score} />
       </div>
     )
   }
