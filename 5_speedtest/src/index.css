@@ -18,3 +18,7 @@ body {
   font-family: 'Luckiest Guy', sans-serif;
   text-align: center;
 }
+
+#root {
+  padding: 2rem;
+}

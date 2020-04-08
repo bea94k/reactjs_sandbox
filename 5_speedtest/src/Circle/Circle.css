@@ -12,6 +12,6 @@
 }
 
 .circle.active {
-background: white;
-background-image: url('/assets/roadrunner.png');
+background: pink;
+background: url("/assets/roadrunner.png") no-repeat center center / cover;
 }

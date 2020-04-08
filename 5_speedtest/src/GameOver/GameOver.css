@@ -5,24 +5,29 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.747);
+    background: rgba(0, 0, 0, 0.5);
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
 .end-score-box {
-    width: 50%;
-    height: 30%;
-    background: gray;
+    width: 70%;
+    height: 50%;
+    background: #e2b789;
     border-radius: 3px;
     position: relative;
     display: grid;
     align-items: center;
+    justify-items: center;
 }
 
 .end-score-box .close-btn {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
+}
+
+.end-score-box img {
+    height: 140%;
 }
