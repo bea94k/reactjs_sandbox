@@ -11,7 +11,9 @@ const getRandomNumber = (min, max) => {
 class App extends Component {
   state = {
     score: 0,
-    current: 0
+    current: 0,
+    showGameOver: false,
+    missedClicks: 0
   };
 
   speed = 1000;
@@ -19,6 +21,11 @@ class App extends Component {
 
   /* what is the next new circle that we want to be active */
   next = () => {
+    /* check if there are more than 3 missed clicks - if yes, end game */
+    if (this.state.missedClicks >= 3) {
+      this.endHandler();
+    }
+
     let nextActive = undefined;
     /* go as long as you get a new thing, not through the whole array/elements */
     do {
@@ -27,8 +34,11 @@ class App extends Component {
     /* if the nextActive is the same as in state, run random again, stop when they are different */
 
     this.setState({
-      current: nextActive
+      current: nextActive,
+      missedClicks: this.state.missedClicks + 1
     });
+
+    this.pace += 0.05;
 
     this.timer = setTimeout(this.next, this.speed)
     console.log('Current random is ' + this.state.current);
@@ -37,8 +47,14 @@ class App extends Component {
   clickHandler = circleID => {
     console.log('Clicked cirlce number ' + circleID);
 
+    if (this.state.current !== circleID) {
+      this.endHandler();
+      return;
+    }
+
     this.setState({
-      score: this.state.score + 1
+      score: this.state.score + 1,
+      missedClicks: 0
     });
   };
 
@@ -48,6 +64,10 @@ class App extends Component {
 
   endHandler = () => {
     clearTimeout(this.timer);
+
+    this.setState({
+      showGameOver: true
+    })
   };
 
   render() {
@@ -82,7 +102,8 @@ class App extends Component {
           <button onClick={this.startHandler}>New game</button>
           <button onClick={this.endHandler}>End game</button>
         </div>
-        <GameOver finalscore={this.state.score} />
+        {this.state.showGameOver && <GameOver finalscore={this.state.score} />}
+        {/* if the state.show is true, render GameOver */}
       </div>
     )
   }

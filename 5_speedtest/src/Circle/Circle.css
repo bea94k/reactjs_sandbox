@@ -13,4 +13,5 @@
 
 .circle.active {
 background: white;
+background-image: url('/assets/roadrunner.png');
 }

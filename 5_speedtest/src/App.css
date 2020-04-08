@@ -9,6 +9,6 @@ button {
     cursor: pointer;
   }
 
-  .start-end-btns {
+  .start-end-btns button {
     margin: 1rem;
   }
