@@ -1,0 +1,14 @@
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    grid-gap: 2rem;
+    margin: 2rem;
+}
+
+.news-card {
+    background: rgb(253, 239, 173);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px gray;
+    padding: 1rem;
+}
