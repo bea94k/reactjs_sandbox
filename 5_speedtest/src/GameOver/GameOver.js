@@ -10,9 +10,11 @@ const GameOver = props => {
     return (
         <div className="end-screen">
             <div className="end-score-box">
-                <h2>Game over!</h2>
                 <img src="/assets/gameover2.jpg" alt="coyote failing"></img>
-                <p>Your final score is: {props.finalscore}</p>
+                <div className="end-text">
+                    <h2>Game over!</h2>
+                    <p>Your final score is: {props.finalscore}</p>
+                </div>
                 <button className="close-btn" onClick={closeHandler}>Close</button>
             </div>
         </div>

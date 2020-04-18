@@ -16,19 +16,22 @@ class App extends Component {
     missedClicks: 0
   };
 
+  // starting speed in ms
   speed = 1700;
   timer = undefined;
 
-  /* what is the next new circle that we want to be active */
+  // activate a new circle
   next = () => {
     let beep = new Audio('/assets/beep.mp3')
 
     /* check if there are more than 3 missed clicks - if yes, end game */
     if (this.state.missedClicks >= 3) {
       this.endHandler();
+      // return to not run the code till the end of next()
       return;
     }
 
+    // beep sound with every change of the active circle
     beep.play();
 
     let nextActive = undefined;
@@ -43,38 +46,46 @@ class App extends Component {
       missedClicks: this.state.missedClicks + 1
     });
 
+    // speed a bit faster (ms between next circle change less and less) with every round
     this.speed *= 0.98;
 
     this.timer = setTimeout(this.next, this.speed)
-    console.log('Current random is ' + this.state.current);
+    /* console.log('Current random is ' + this.state.current); */
   };
 
   clickHandler = circleID => {
-    console.log('Clicked circle number ' + circleID);
+    /* console.log('Clicked circle number ' + circleID); */
 
+    // if clicked the wrong circle
     if (this.state.current !== circleID) {
       this.endHandler();
       return;
     }
 
+    // if clicked correct circle, add 1 to score and reset the missed clicks counter
     this.setState({
       score: this.state.score + 1,
       missedClicks: 0
     });
   };
 
+  // when start button clicked, start the active circle change function, which in the end is calling itself again and again
   startHandler = () => {
     this.next();
   };
 
+
   endHandler = () => {
     let ouch = new Audio('/assets/ouch.mp3');
 
+    // when game is over, the active circle doesn't change anymore (setTimeout to call next() again is cleared)
     clearTimeout(this.timer);
 
+    // game over sound, played once
     ouch.play();
 
     this.setState({
+      // show the game over screen
       showGameOver: true
     })
   };
@@ -119,3 +130,8 @@ class App extends Component {
 }
 
 export default App;
+
+// EXTRAS TO DO:
+// user chooses how many circles there will be
+// clicking the active circle gives only 1 point, no matter how many times the user clicks (in one round; now it's possible to get more points out of one circle in one round)
+// custom cursor (coyote in public/assets)

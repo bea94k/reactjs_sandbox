@@ -121,11 +121,6 @@ class App extends Component {
 export default App;
 
 
-// EXTRAS TO WORK ON:
-/*
-make it pretty
-take screenshot and update readme file
-make sure the speed test works, is pretty, then add screenshot */
 
 // FIRST PART OF THE LECTURE, SIMPLER LISTS
 

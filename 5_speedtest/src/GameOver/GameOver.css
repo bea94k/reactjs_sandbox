@@ -13,21 +13,25 @@
 
 .end-score-box {
     width: 70%;
-    height: 50%;
+    height: 60%;
     background: #e2b789;
     border-radius: 3px;
     position: relative;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
 }
 
 .end-score-box .close-btn {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
 }
 
 .end-score-box img {
-    height: 140%;
+    padding: 1.5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
