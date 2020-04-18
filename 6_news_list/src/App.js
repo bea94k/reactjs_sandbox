@@ -18,7 +18,7 @@ const newsPosts = [
   },
   {
     postID: 2,
-    title: "Catty ipsum little kitten big roar roar",
+    title: "Little kitten big roar roar",
     author: "Garfield",
     likes: 0,
     desc: "I love cuddles pooping rainbow while flying in a toasted bread costume in space. Loves cheeseburgers poop on floor and watch human clean up for eat all the power cords or give me some of your food give me some of your food give me some of your food meh, i don't want it my water bowl is clean and freshly replenished, so i'll drink from the toilet but lick the plastic bag, for proudly present butt to human. Rub face on owner catty.",
@@ -122,10 +122,10 @@ export default App;
 
 
 // EXTRAS TO WORK ON:
-/* add a button to remove the post, not clicking anywhere on the post
-add a like counter
+/*
 make it pretty
-take screenshot and update readme file*/
+take screenshot and update readme file
+make sure the speed test works, is pretty, then add screenshot */
 
 // FIRST PART OF THE LECTURE, SIMPLER LISTS
 
