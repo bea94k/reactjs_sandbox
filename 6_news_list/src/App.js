@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Post from './Post/Post';
+import Example from './Example/Example';
+import MapMethod from './Example/MapMethod';
 
 // var posts = array with the objects of data of the news
 /* http://source.unsplash.com/featured/keyword */
@@ -98,3 +100,23 @@ export default App;
 add a like counter
 make it pretty
 take screenshot and update readme file*/
+
+// FIRST PART OF THE LECTURE, SIMPLER LISTS
+
+
+/* class App extends Component {
+  render() {
+    return (
+      <div>
+        Woop woop!
+        <hr />
+        <Example />
+        <hr />
+        <MapMethod />
+      </div>
+    );
+  }
+}
+
+export default App;
+ */
