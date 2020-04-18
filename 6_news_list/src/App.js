@@ -69,6 +69,7 @@ class App extends Component {
   render() {
 
     // mapping to render dynamically
+    //.map(currentElement, index) - always in this order
     const newsList = this.state.postsFromState.map((post, index) => {
       return (
         <Post
@@ -95,4 +96,5 @@ export default App;
 // EXTRAS TO WORK ON:
 /* add a button to remove the post, not clicking anywhere on the post
 add a like counter
-make it pretty */
+make it pretty
+take screenshot and update readme file*/
