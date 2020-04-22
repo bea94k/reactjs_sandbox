@@ -3,11 +3,12 @@ import React from 'react';
 const Content = ({ likes, dislikes }) => {
 
     // the "if" happen in Content.js before return(), so depending on the result of "if" we return one thing or another
-    // if (likes === 0 && dislikes === 0)  might not be recommended to use && in "if"
+    /* const totalVotes = likes + dislikes;
 
-    const totalVotes = likes + dislikes;
+    if (totalVotes === 0) */
 
-    if (totalVotes === 0) {
+
+    if (likes === 0 && dislikes === 0) {
         return (
             <div>
                 No votes yet. Be the first one to press a button.

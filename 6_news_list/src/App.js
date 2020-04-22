@@ -104,6 +104,7 @@ class App extends Component {
           likes={post.likes}
           addLike={this.addLike.bind(this, index)}
           removeLike={this.removeLike.bind(this, index)}
+          // post.id, not index?!?????
           desc={post.desc}
           img={post.img}
           click={this.hideHandler.bind(this, index)} />
