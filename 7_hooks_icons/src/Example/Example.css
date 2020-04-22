@@ -1,0 +1,12 @@
+.grid-wrap {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+}

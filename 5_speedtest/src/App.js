@@ -132,6 +132,7 @@ class App extends Component {
 export default App;
 
 // EXTRAS TO DO:
+// customized message on the game over screen based on the user's score
 // user chooses how many circles there will be
 // clicking the active circle gives only 1 point, no matter how many times the user clicks (in one round; now it's possible to get more points out of one circle in one round)
 // custom cursor (coyote in public/assets)
