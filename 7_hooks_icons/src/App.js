@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Button from './Button/Button'
+import Content from './Content/Content'
 
 const App = () => {
   const [like, setLike] = useState(0);
@@ -18,9 +19,7 @@ const App = () => {
       <Button click={addLike} text="Like" />
       <Button click={addDislike} text="Dislike" />
       <Button click={resetResult} text="Reset" />
-      <h1>Votes:</h1>
-      <p>Like: {like}</p>
-      <p>Dislike: {dislike}</p>
+      <Content likes={like} dislikes={dislike} />
     </div>
   );
 }
