@@ -8,28 +8,32 @@ const blogCards = [
         title: 'Brunch',
         shortDecsr: 'Brunch yada yada yada Brunch yada yada yada yada yada',
         longDescr: 'Brunch yada yada yada Brunch yada yada yada yada yada Brunch yada yada yada Brunch yada yada yada yada yada Brunch yada yada yada Brunch yada yada yada yada yada',
-        img: 'http://source.unsplash.com/HlNcigvUi4Q'
+        img: '/img/brunch.jpg',
+        alt: 'brunch food'
     },
     {
         cardID: 2,
         title: 'Corgi',
         shortDecsr: 'Corgi yada yada yada Corgi yada yada yada yada yada',
         longDescr: 'Corgi yada yada yada Corgi yada yada yada yada yada Corgi yada yada yada Corgi yada yada yada yada yada Corgi yada yada yada Corgi yada yada yada yada yada',
-        img: 'http://source.unsplash.com/KQN500iE8KA'
+        img: '/img/corgi.jpg',
+        alt: 'corgi dog'
     },
     {
         cardID: 3,
-        title: 'Cofee',
-        shortDecsr: 'Cofee yada yada yada Cofee yada yada yada yada yada',
-        longDescr: 'Cofee yada yada yada Cofee yada yada yada yada yada Cofee yada yada yada Cofee yada yada yada yada yada Cofee yada yada yada Cofee yada yada yada yada yada',
-        img: 'http://source.unsplash.com/_wkd7XBRfU4'
+        title: 'Coffee',
+        shortDecsr: 'Coffee yada yada yada Coffee yada yada yada yada yada',
+        longDescr: 'Coffee yada yada yada Coffee yada yada yada yada yada Coffee yada yada yada Coffee yada yada yada yada yada Coffee yada yada yada Coffee yada yada yada yada yada',
+        img: '/img/coffee.jpg',
+        alt: 'coffee cup'
     },
     {
         cardID: 4,
-        title: 'Retro',
-        shortDecsr: 'Retro yada yada yada Retro yada yada yada yada yada',
-        longDescr: 'Retro yada yada yada Retro yada yada yada yada yada Retro yada yada yada Retro yada yada yada yada yada Retro yada yada yada Retro yada yada yada yada yada',
-        img: 'http://source.unsplash.com/R4Rdi0EfBws'
+        title: 'Vinyl',
+        shortDecsr: 'Vinyl yada yada yada Vinyl yada yada yada yada yada',
+        longDescr: 'Vinyl yada yada yada Vinyl yada yada yada yada yada Vinyl yada yada yada Vinyl yada yada yada yada yada Vinyl yada yada yada Vinyl yada yada yada yada yada',
+        img: '/img/vinyl.jpg',
+        alt: 'vinyl record playing'
     },
 ]
 
@@ -50,12 +54,13 @@ class Blog extends Component {
                     shortDescr={card.shortDecsr}
                     longDescr={card.longDescr}
                     img={card.img}
+                    alt={card.alt}
                 />
             )
         })
 
         return (
-            <div>
+            <div className="blog-grid grid-wrap">
                 {blogCardsList}
             </div>
         )

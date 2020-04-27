@@ -1,9 +1,10 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => {
     return (
-        <div>
-            <h2>Welcome to the homepage.</h2>
+        <div className="grid-wrap home">
+            <h2>Welcome to the home of all the hipstery.</h2>
         </div>
     );
 }

@@ -7,6 +7,11 @@
 body {
   height: 100vh;
   width: 100vw;
+  background: peachpuff;
+}
+
+main {
+  height: calc(100vh - 3rem);
 }
 
 p {
@@ -17,7 +22,4 @@ p {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-gap: 2rem;
-  width: 85%;
-  margin: 1rem auto;
 }
