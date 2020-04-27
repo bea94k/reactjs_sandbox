@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background: url('https://source.unsplash.com/vJsj-hgOEG0') center center/cover;
+}
+
+.site-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}

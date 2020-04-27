@@ -3,31 +3,33 @@ import './App.css';
 import Button from './Button/Button';
 import Content from './Content/Content';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSmileBeam, faTired, faRedoAlt } from "@fortawesome/free-solid-svg-icons";
+import { faHamburger, faPizzaSlice, faCarrot } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
-  const [like, setLike] = useState(0);
-  const [dislike, setDislike] = useState(0);
+  const [burger, setBurger] = useState(0);
+  const [pizza, setPizza] = useState(0);
 
-  const addLike = () => setLike(like + 1);
-  const addDislike = () => setDislike(dislike + 1);
+  const addBurger = () => setBurger(burger + 1);
+  const addPizza = () => setPizza(pizza + 1);
   const resetResult = () => {
-    setLike(0);
-    setDislike(0);
+    setBurger(0);
+    setPizza(0);
   }
 
   return (
-    <div>
-      <Button click={addLike} text="Like">
-        <FontAwesomeIcon icon={faSmileBeam} />
-      </Button>
-      <Button click={addDislike} text="Dislike">
-        <FontAwesomeIcon icon={faTired} />
-      </Button>
-      <Button click={resetResult} text="Reset">
-        <FontAwesomeIcon icon={faRedoAlt} />
-      </Button>
-      <Content likes={like} dislikes={dislike} />
+    <div className='site-wrapper'>
+      <div className="btn-wrapper">
+        <Button click={addBurger} text="Burgers">
+          <FontAwesomeIcon icon={faHamburger} />
+        </Button>
+        <Button click={addPizza} text="Pizza">
+          <FontAwesomeIcon icon={faPizzaSlice} />
+        </Button>
+        <Button click={resetResult} text="Forget it! Eat a salad!">
+          <FontAwesomeIcon icon={faCarrot} />
+        </Button>
+      </div>
+      <Content burgers={burger} pizzas={pizza} />
     </div>
   );
 }

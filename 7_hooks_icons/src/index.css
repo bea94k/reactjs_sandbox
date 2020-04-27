@@ -6,19 +6,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(192, 214, 223);
-  background-image: linear-gradient(to left bottom, #b7d7f9, #b4d4fb, #b2d0fd, #b0ccfe, #b0c8ff);
-  color: rgb(1, 64, 116);
-}
-
-button {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    background: rgb(3, 111, 199);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 0.5rem;
-    
 }
