@@ -1,70 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from '../Card/Card';
+import blogCards from '../data';
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
 import './Blog.css';
 
-const blogCards = [
-    {
-        cardID: 1,
-        title: 'Brunch',
-        shortDecsr: 'Brunch yada yada yada Brunch yada yada yada yada yada',
-        longDescr: 'Brunch yada yada yada Brunch yada yada yada yada yada Brunch yada yada yada Brunch yada yada yada yada yada Brunch yada yada yada Brunch yada yada yada yada yada',
-        img: '/img/brunch.jpg',
-        alt: 'brunch food'
-    },
-    {
-        cardID: 2,
-        title: 'Corgi',
-        shortDecsr: 'Corgi yada yada yada Corgi yada yada yada yada yada',
-        longDescr: 'Corgi yada yada yada Corgi yada yada yada yada yada Corgi yada yada yada Corgi yada yada yada yada yada Corgi yada yada yada Corgi yada yada yada yada yada',
-        img: '/img/corgi.jpg',
-        alt: 'corgi dog'
-    },
-    {
-        cardID: 3,
-        title: 'Coffee',
-        shortDecsr: 'Coffee yada yada yada Coffee yada yada yada yada yada',
-        longDescr: 'Coffee yada yada yada Coffee yada yada yada yada yada Coffee yada yada yada Coffee yada yada yada yada yada Coffee yada yada yada Coffee yada yada yada yada yada',
-        img: '/img/coffee.jpg',
-        alt: 'coffee cup'
-    },
-    {
-        cardID: 4,
-        title: 'Vinyl',
-        shortDecsr: 'Vinyl yada yada yada Vinyl yada yada yada yada yada',
-        longDescr: 'Vinyl yada yada yada Vinyl yada yada yada yada yada Vinyl yada yada yada Vinyl yada yada yada yada yada Vinyl yada yada yada Vinyl yada yada yada yada yada',
-        img: '/img/vinyl.jpg',
-        alt: 'vinyl record playing'
-    },
-]
 
+const Blog = () => {
+    let { path, url } = useRouteMatch();
 
-class Blog extends Component {
-    state = {
-        cards: blogCards
-    };
-
-
-    render() {
-        const blogCardsList = this.state.cards.map((card, index) => {
-
-            return (
-                <Card
-                    key={card.cardID}
-                    title={card.title}
-                    shortDescr={card.shortDecsr}
-                    longDescr={card.longDescr}
-                    img={card.img}
-                    alt={card.alt}
-                />
-            )
-        })
+    const blogCardsList = blogCards.map((card, index) => {
 
         return (
-            <div className="blog-grid grid-wrap">
-                {blogCardsList}
-            </div>
+
+            <Card
+                key={card.cardID}
+                title={card.title}
+                shortDescr={card.shortDecsr}
+                longDescr={card.longDescr}
+                img={card.img}
+                alt={card.alt}
+                link={<Link to={`${url}/${card.cardID}`}><button>Read more</button></Link>} />
         )
-    }
+    })
+
+    return (
+        <div className="blog-grid grid-wrap">
+            {blogCardsList}
+
+            {/* <Switch>
+                <Route path={`${path}/:postid`}>
+                    <Post />
+                </Route>
+            </Switch> */}
+        </div>
+    );
 }
 
 export default Blog;
