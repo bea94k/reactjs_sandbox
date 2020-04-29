@@ -5,7 +5,7 @@ import Home from './Home/Home';
 import About from './About/About';
 import Blog from './Blog/Blog';
 import Post from './Post/Post';
-import './App.css';
+// import './App.css';
 
 const App = () => {
   return (

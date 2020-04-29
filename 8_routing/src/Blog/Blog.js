@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from '../Card/Card';
 import blogCards from '../data';
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
-import './Blog.css';
+import { Link, useRouteMatch } from 'react-router-dom';
+// import './Blog.css';
 
 
 const Blog = () => {
-    let { path, url } = useRouteMatch();
+    let { url } = useRouteMatch();
 
     const blogCardsList = blogCards.map((card, index) => {
 
@@ -26,12 +26,6 @@ const Blog = () => {
     return (
         <div className="blog-grid grid-wrap">
             {blogCardsList}
-
-            {/* <Switch>
-                <Route path={`${path}/:postid`}>
-                    <Post />
-                </Route>
-            </Switch> */}
         </div>
     );
 }
