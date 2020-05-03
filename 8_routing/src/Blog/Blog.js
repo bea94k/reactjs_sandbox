@@ -1,7 +1,8 @@
 import React from 'react';
-import Card from '../Card/Card';
+import PostCard from '../PostCard/PostCard';
 import blogCards from '../data';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { useRouteMatch } from 'react-router-dom';
+import CardDeck from 'react-bootstrap/CardDeck';
 // import './Blog.css';
 
 
@@ -12,20 +13,22 @@ const Blog = () => {
 
         return (
 
-            <Card
+            <PostCard
                 key={card.cardID}
                 title={card.title}
-                shortDescr={card.shortDecsr}
+                shortDescr={card.shortDescr}
                 longDescr={card.longDescr}
                 img={card.img}
                 alt={card.alt}
-                link={<Link to={`${url}/${card.cardID}`}><button>Read more</button></Link>} />
+                link={`${url}/${card.cardID}`} />
         )
     })
 
     return (
         <div className="blog-grid grid-wrap">
-            {blogCardsList}
+            <CardDeck>
+                {blogCardsList}
+            </CardDeck>
         </div>
     );
 }

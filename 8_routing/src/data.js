@@ -2,7 +2,7 @@ const blogCards = [
     {
         cardID: 'post1',
         title: 'Brunch',
-        shortDecsr: 'Brunch yada yada yada Brunch yada yada yada yada yada',
+        shortDescr: 'Brunch yada yada yada Brunch yada yada yada yada yada',
         longDescr: 'Brunch yada yada yada Brunch yada yada yada yada yada Brunch yada yada yada Brunch yada yada yada yada yada Brunch yada yada yada Brunch yada yada yada yada yada',
         img: '/img/brunch.jpg',
         alt: 'brunch food'
@@ -10,7 +10,7 @@ const blogCards = [
     {
         cardID: 'post2',
         title: 'Corgi',
-        shortDecsr: 'Corgi yada yada yada Corgi yada yada yada yada yada',
+        shortDescr: 'Corgi yada yada yada Corgi yada yada yada yada yada',
         longDescr: 'Corgi yada yada yada Corgi yada yada yada yada yada Corgi yada yada yada Corgi yada yada yada yada yada Corgi yada yada yada Corgi yada yada yada yada yada',
         img: '/img/corgi.jpg',
         alt: 'corgi dog'
@@ -18,7 +18,7 @@ const blogCards = [
     {
         cardID: 'post3',
         title: 'Coffee',
-        shortDecsr: 'Coffee yada yada yada Coffee yada yada yada yada yada',
+        shortDescr: 'Coffee yada yada yada Coffee yada yada yada yada yada',
         longDescr: 'Coffee yada yada yada Coffee yada yada yada yada yada Coffee yada yada yada Coffee yada yada yada yada yada Coffee yada yada yada Coffee yada yada yada yada yada',
         img: '/img/coffee.jpg',
         alt: 'coffee cup'
@@ -26,7 +26,7 @@ const blogCards = [
     {
         cardID: 'post4',
         title: 'Vinyl',
-        shortDecsr: 'Vinyl yada yada yada Vinyl yada yada yada yada yada',
+        shortDescr: 'Vinyl yada yada yada Vinyl yada yada yada yada yada',
         longDescr: 'Vinyl yada yada yada Vinyl yada yada yada yada yada Vinyl yada yada yada Vinyl yada yada yada yada yada Vinyl yada yada yada Vinyl yada yada yada yada yada',
         img: '/img/vinyl.jpg',
         alt: 'vinyl record playing'
