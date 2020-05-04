@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
-import Home from './Home';
+import Home from './Home/Home';
 import Blog from './Blog';
+import PostPage from './PostPage';
 import NewPost from './NewPost';
-import Footer from './Footer';
+import Footer from './Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const App = () => {
@@ -13,8 +15,9 @@ const App = () => {
       <Header />
       <main>
         <Switch>
-          <Route path='/' component={Home} />
-          <Route path='/blog' component={Blog} />
+          <Route path='/' exact component={Home} />
+          <Route path='/blog' exact component={Blog} />
+          <Route path='/blog/:postID' component={PostPage} />
           <Route path='/newpost' component={NewPost} />
         </Switch>
       </main>
