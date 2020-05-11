@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Cheesecake",
+      "ingredients": "cheese, eggs, milk, sugar, gelatine, strawberries, cookies",
+      "descr": "Cheesecake blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+      "img": "/img/cheesecake.jpg",
+      "alt": "Cheesecake"
+    },
+    {
+      "id": 2,
+      "title": "Steaks",
+      "ingredients": "good piece of meat, butter, salt, pepper, herbs",
+      "descr": "Steaks blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+      "img": "/img/steak.jpg",
+      "alt": "Steaks"
+    },
+    {
+      "id": 3,
+      "title": "Ice cream",
+      "ingredients": "cream, eggs, chocolate, strawberries",
+      "descr": "Ice cream blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+      "img": "/img/icecream.jpg",
+      "alt": "Ice cream"
+    },
+    {
+      "id": 4,
+      "title": "Pumpkin soup",
+      "ingredients": "pumpkin, cheese, cream, salt, pepper",
+      "descr": "Pumpkin soup blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+      "img": "/img/soup.jpg",
+      "alt": "Pumpkin soup"
+    }
+  ]
+}

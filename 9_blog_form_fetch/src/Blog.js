@@ -1,21 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouteMatch } from 'react-router-dom';
-import postData from './data';
+import axios from 'axios';
+
 import Post from './Post';
 import CardDeck from 'react-bootstrap/CardDeck';
 
 const Blog = () => {
     let { url } = useRouteMatch();
+    const [post, setPost] = useState([]);
 
-    const blogPostList = postData.map(post => {
+    useEffect(() => {
+        axios.get('http://localhost:3001/posts')
+            .then((response => {
+                const postsToDisplay = response.data.slice(0, 15);
+                setPost(postsToDisplay);
+                /* console.log(response);
+                console.log(postsToDisplay);
+                console.log(post); */
+            }))
+    }, []);
+
+    const blogPostList = post.map(element => {
         return (
             <Post
-                key={post.cardID}
-                title={post.title}
-                descr={post.descr}
-                img={post.img}
-                alt={post.alt}
-                link={`${url}/${post.cardID}`} />
+                key={element.id}
+                title={element.title}
+                ingredients={element.ingredients}
+                img={element.img}
+                alt={element.alt}
+                link={`${url}/${element.id}`} />
         )
     })
 
