@@ -3,7 +3,7 @@ import { useRouteMatch } from 'react-router-dom';
 import axios from 'axios';
 
 import Post from './Post';
-import CardDeck from 'react-bootstrap/CardDeck';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 const Blog = () => {
     let { url } = useRouteMatch();
@@ -24,7 +24,7 @@ const Blog = () => {
         return (
             <Post
                 key={element.id}
-                title={element.title}
+                dish={element.dish}
                 ingredients={element.ingredients}
                 img={element.img}
                 alt={element.alt}
@@ -33,9 +33,9 @@ const Blog = () => {
     })
 
     return (
-        <CardDeck>
+        <CardColumns>
             {blogPostList}
-        </CardDeck>
+        </CardColumns>
     );
 }
 

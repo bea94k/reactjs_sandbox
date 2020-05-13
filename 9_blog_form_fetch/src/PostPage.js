@@ -28,7 +28,7 @@ const PostPage = () => {
     // when the post data is loaded
     if (loadedPost) {
         postData = <div>
-            <h2>{loadedPost.title}</h2>
+            <h2>{loadedPost.dish}</h2>
             <h5>Ingredients: {loadedPost.ingredients}</h5>
             <p>Preparation: {loadedPost.descr}</p>
             <img src={loadedPost.img} alt={loadedPost.alt}></img>
