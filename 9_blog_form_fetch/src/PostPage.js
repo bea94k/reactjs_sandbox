@@ -27,12 +27,14 @@ const PostPage = () => {
 
     // when the post data is loaded
     if (loadedPost) {
-        postData = <div>
-            <h2>{loadedPost.dish}</h2>
-            <h5>Ingredients: {loadedPost.ingredients}</h5>
-            <p>Preparation: {loadedPost.descr}</p>
+        postData = <div className="grid-2-col">
+            <div className="single-post-page">
+                <h2>{loadedPost.dish}</h2>
+                <h5>Ingredients: {loadedPost.ingredients}</h5>
+                <p>Preparation: {loadedPost.descr}</p>
+                <p><Button as={Link} to="/blog" variant="dark" size='lg'>Back to Blog</Button></p>
+            </div>
             <img src={loadedPost.img} alt={loadedPost.alt}></img>
-            <Link to='/blog'><Button>Back to Blog</Button></Link>
         </div>
     }
 

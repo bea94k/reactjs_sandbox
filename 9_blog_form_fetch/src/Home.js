@@ -1,9 +1,8 @@
 import React from 'react';
-import './Home.css';
 
 const Home = () => {
     return (
-        <div className="home-grid">
+        <div className="grid-2-col">
             <img src='/img/tina.jpg' alt="Tina cooking" />
             <div>
                 <h1>Hi, I'm Tina!</h1>

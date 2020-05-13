@@ -33,9 +33,11 @@ const Blog = () => {
     })
 
     return (
-        <CardColumns>
-            {blogPostList}
-        </CardColumns>
+        <div className="blog-cards-wrap">
+            <CardColumns>
+                {blogPostList}
+            </CardColumns>
+        </div>
     );
 }
 

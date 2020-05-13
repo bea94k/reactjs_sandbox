@@ -5,19 +5,19 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="md" bg="light" variant="light" fixed="top">
-            <Link to='/'><Navbar.Brand href="#home">Tina's Recipes</Navbar.Brand></Link>
+        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top">
+            <Navbar.Brand as={Link} to="/">Tina's Recipes</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav variant="pills" defaultActiveKey="/">
+            <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+                <Nav>
                     <Nav.Item>
-                        <Link to='/'><Nav.Link href="/">Home</Nav.Link></Link>
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Link to='/blog'><Nav.Link href="/blog">Blog</Nav.Link></Link>
+                        <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Link to='/newpost'><Nav.Link href="/newpost">Create new post</Nav.Link></Link>
+                        <Nav.Link as={Link} to="/newpost">Create new post</Nav.Link>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>

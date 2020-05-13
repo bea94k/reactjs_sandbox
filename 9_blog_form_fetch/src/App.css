@@ -1,8 +1,53 @@
-main {
-    height: 100vh;
-    padding-top: 4rem;
+body {
+    background: rgb(212, 230, 231);
 }
 
-.form-wrap {
-    margin: 4rem;
+main {
+    height: 100vh;
+    padding: 56px 0 1.2rem;
+}
+
+/* GRID TWO COLUMNS 1:1 - IMG AND DIV, used in home page and single post page */
+
+.grid-2-col {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-2-col img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-2-col div {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* GRID TWO COLUMNS 1:2 - IMG AND DIV, used in new post page */
+
+.grid-1-2-col {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-1-2-col img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-1-2-col div {
+    width: 90%;
+}
+
+.blog-cards-wrap {
+    margin: 2rem;
 }
