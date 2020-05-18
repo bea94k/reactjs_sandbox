@@ -3,7 +3,6 @@ import { useRouteMatch } from 'react-router-dom';
 import axios from 'axios';
 
 import Post from './Post';
-import CardColumns from 'react-bootstrap/CardColumns';
 
 const Blog = () => {
     let { url } = useRouteMatch();
@@ -24,6 +23,7 @@ const Blog = () => {
         return (
             <Post
                 key={element.id}
+                ID={element.id}
                 dish={element.dish}
                 ingredients={element.ingredients}
                 img={element.img}
@@ -34,9 +34,7 @@ const Blog = () => {
 
     return (
         <div className="blog-cards-wrap">
-
             {blogPostList}
-
         </div>
     );
 }

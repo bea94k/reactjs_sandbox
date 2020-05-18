@@ -48,9 +48,25 @@ main {
     width: 90%;
 }
 
+/* GRID FOR POST CARDS IN BLOG */
+
 .blog-cards-wrap {
     margin: 2rem 2rem 3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #343a40;
+    color: #fff;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
 }
