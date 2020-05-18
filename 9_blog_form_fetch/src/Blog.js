@@ -1,25 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useRouteMatch } from 'react-router-dom';
-import axios from 'axios';
+import postData from './data';
 
 import Post from './Post';
 
 const Blog = () => {
     let { url } = useRouteMatch();
-    const [post, setPost] = useState([]);
 
-    useEffect(() => {
-        axios.get('http://localhost:3001/posts')
-            .then((response => {
-                const postsToDisplay = response.data.slice(0, 15);
-                setPost(postsToDisplay);
-                /* console.log(response);
-                console.log(postsToDisplay);
-                console.log(post); */
-            }))
-    }, []);
-
-    const blogPostList = post.map(element => {
+    const blogPostList = postData.map(element => {
         return (
             <Post
                 key={element.id}

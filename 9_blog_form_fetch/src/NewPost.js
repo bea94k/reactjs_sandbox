@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
@@ -22,13 +22,11 @@ const NewPost = () => {
 
     const addRecipeHandler = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/posts', newPost)
+        /* axios.post('http://localhost:3001/posts', newPost)
             .then((response) => {
                 console.log(response.data)
-                /* if (response.status == 201) {
-                    let successMessage = 'Your recipe has been added!'
-                } */
-            })
+            }) */
+        console.log('Your recipe would be added if there was some backend connected here :)');
     }
 
 
@@ -36,7 +34,6 @@ const NewPost = () => {
         <div className='grid-1-2-col'>
             <img src='https://source.unsplash.com/PkkLkjJdUZw' alt='Orange pots in a kitchen'></img>
             <div>
-                {/* <p>{successMessage}</p> */}
                 <h2 style={{ 'textAlign': 'center', marginTop: '1rem' }}>Create a new recipe</h2>
                 <Form>
                     <Form.Group controlId="newPost.dish">
