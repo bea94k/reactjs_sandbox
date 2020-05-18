@@ -10,7 +10,7 @@ const Post = ({ key, dish, img, alt, ingredients, link }) => {
     /* = key % 2 === 0 ? 'dark' : 'light'; */
     return (
         /* bg={{ key } % 2 === 0 ? 'dark' : 'light'} */
-        <Card bg={'light'} border='dark' style={{ width: '18rem' }}>
+        <Card bg={'light'} border='dark' style={{ width: '100%' }}>
             <Card.Img variant="top" src={img} alt={alt} />
             <Card.Body>
                 <Card.Title>{dish}</Card.Title>

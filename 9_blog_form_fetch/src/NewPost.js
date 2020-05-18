@@ -4,9 +4,11 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 // TO DO:
+// conditional rendering: if card's ID even, dark card, if card's ID odd, light card
 // reset input fields after clicking "add recipe"
 // success message if response.status == 201 - conditional rendering?
 // delete button in blog cards
+// style "Please wait a second" message - center it
 
 const NewPost = () => {
     const [newPost, setNewPost] = useState({

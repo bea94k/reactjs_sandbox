@@ -34,9 +34,9 @@ const Blog = () => {
 
     return (
         <div className="blog-cards-wrap">
-            <CardColumns>
-                {blogPostList}
-            </CardColumns>
+
+            {blogPostList}
+
         </div>
     );
 }

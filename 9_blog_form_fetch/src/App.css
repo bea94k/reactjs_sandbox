@@ -49,5 +49,8 @@ main {
 }
 
 .blog-cards-wrap {
-    margin: 2rem;
+    margin: 2rem 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
 }
