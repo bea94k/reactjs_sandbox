@@ -9,4 +9,4 @@ Hosted on Netlify: https://quirky-swanson-783037.netlify.app/
 
 ## Screenshot
 
-![9_tinas_recipes_blog](./public/9-screenshot.png?raw=true)
+![9_tinas_recipes_blog](./public/9_screenshot.png?raw=true)
