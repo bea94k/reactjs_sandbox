@@ -8,4 +8,4 @@ Version on the master branch uses axios calls and json-server development server
 
 ## Screenshot
 
-![9_tinas_recipes_blog](./public/9-screenshot.png?raw=true)
+![9_tinas_recipes_blog](./public/9_screenshot.png?raw=true)

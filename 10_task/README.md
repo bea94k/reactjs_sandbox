@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Base for 10_task lecture
+## Tenth task - base for developing task 9 further
 
-Here you find a simple routing example
+A simple routing example and practising using lcoal json-server to fetch data from a file.
 
 ### `npm install`
 

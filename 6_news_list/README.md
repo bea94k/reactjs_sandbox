@@ -6,4 +6,4 @@ School project in sixth lesson: playing with arrays and using them to render a c
 
 ## Screenshot
 
-![6_arrays_news_list](./public/6-screenshot.png?raw=true)
+![6_arrays_news_list](./public/6_screenshot.png?raw=true)

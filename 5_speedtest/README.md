@@ -7,4 +7,4 @@ Playing with state and complex click handlers. Passing data from state in App.js
 
 ## Screenshot
 
-![5_coyote_roadrunner_speed_game](./public/5-screenshot.png?raw=true)
+![5_coyote_roadrunner_speed_game](./public/5_screenshot.png?raw=true)
