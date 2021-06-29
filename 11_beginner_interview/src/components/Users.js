@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function Users() {
@@ -11,38 +11,33 @@ export default function Users() {
         console.log(resp);
         console.log(resp.data.results);
         // setUsers(resp.data.results); // you need to RETURN!
-        return JSON.stringify(resp.data);
+        return resp.data.results;
       })
       .catch((err) => {
         console.log("Error: ", err);
       });
   };
 
-  const clickFetch = () => {
+  useEffect(() => {
     fetchUsers().then((randomData) => {
       setUsers(randomData);
     });
-  };
-
-  /* const displayUsers = (users) => {
-    users.forEach((user) => {
-      return (
-        <div>
-          <h3>Name:</h3>
-          <p>
-            {user.name.first} {user.name.last}
-          </p>
-          <img src={user.picture.medium} alt="profile photograph" />
-        </div>
-      );
-    });
-  }; */
+  }, []);
 
   return (
     <div>
-      <h2>Fetching users</h2>
-      <button onClick={clickFetch}>Fetch users</button>
-      {!users ? <p>No users fetched yet.</p> : users}
+      <h2>Random users</h2>
+      {!users
+        ? ""
+        : users.map((user, idx) => (
+            <div key={idx}>
+              <h3>Name:</h3>
+              <p>
+                {user.name.first} {user.name.last}
+              </p>
+              <img src={user.picture.large} alt="profile pic" />
+            </div>
+          ))}
     </div>
   );
 }
