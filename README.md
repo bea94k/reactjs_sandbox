@@ -1,5 +1,7 @@
 # Intro to React - REACT20K BCH & other
 
+**Not maintained!** School stuff.
+
 Sandbox for practising React - using states, hooks, mapping from array, icons, routing, fetching data.
 
 ## Topics:
